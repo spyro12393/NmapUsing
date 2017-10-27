@@ -1,7 +1,3 @@
----
-slideOptions:
-    transition: slide
----
 # Nmap - Network Mapper
 - Questions
     - 說明nmap指令中各項option參數的意義
@@ -37,9 +33,9 @@ digraph hierarchy {
 - `狀態`可能是 open(開放的)，filtered(被過濾的)， closed(關閉的)，或者unfiltered(未被過濾的)
 
 - `Open(開放的)`意味著目標機器上的應用程序正在該端口監聽連接。
-- `filtered(被过滤的)` 意味著防火牆，過濾器或者其他的網路障礙阻止了該端口的訪問，Nmap無法得知他是open還是closed。 
-- `closed(关闭的)` 端口沒有應用程序在他上面監聽，但是他們隨時可能開放。
-- `unfiltered(未被過濾的）`当端口对Nmap的探测做出响应，但是Nmap无法确定它们是关闭还是开放时，这些端口就被认为是 unfiltered(未被过滤的) 如果Nmap报告状态组合 open|filtered 和 closed|filtered时，那说明Nmap无法确定该端口处于两个状态中的哪一个状态
+- `filtered(被過濾的)` 意味著防火牆，過濾器或者其他的網路障礙阻止了該端口的訪問，Nmap無法得知他是open還是closed。 
+- `closed(關閉的)` 端口沒有應用程序在他上面監聽，但是他們隨時可能開放。
+- `unfiltered(未被過濾的）當端口對Nmap的探測做出響應，但是Nmap無法確定他們是關閉還是開放時，這些端口就被認為是unfiltered(未被過濾的），如果Nmap報告狀態組合 open|filtered 和 closed|filtered時，那說明Nmap無法確定該端口處於兩個狀態中的哪個狀態。
 
 
 ## 3. What are the "options"?
